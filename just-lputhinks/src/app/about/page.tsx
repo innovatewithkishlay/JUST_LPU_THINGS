@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from '@/lib/motion';
-import { FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaYoutube, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -48,6 +49,9 @@ export default function AboutPage() {
             <a href="https://linkedin.com/in/demo" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition text-2xl">
               <FaLinkedin />
             </a>
+            <a href="https://chat.whatsapp.com/demo" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800 transition text-2xl">
+              <FaWhatsapp />
+            </a>
           </div>
         </motion.div>
         <motion.div
@@ -56,9 +60,15 @@ export default function AboutPage() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="text-center"
         >
-          <p className="text-gray-500 text-xs">
-            Want to connect or collaborate? Follow Bhavishya on social media or reach out via the Join Us page.
+          <p className="text-gray-500 text-xs mb-2">
+            Want to connect or collaborate? Follow Bhavishya on social media, join the WhatsApp group, or reach out directly.
           </p>
+          <Link
+            href="/join"
+            className="text-blue-600 underline text-sm font-medium hover:text-blue-800 transition"
+          >
+            Reach out by Join Us page
+          </Link>
         </motion.div>
       </motion.section>
     </main>

@@ -21,12 +21,12 @@ export default function DemandPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-16">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-10">
       <motion.section
         initial={{ opacity: 0, y: 32 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, type: "spring" }}
-        className="w-full max-w-4xl"
+        className="w-full max-w-6xl"
       >
         <div className="relative flex flex-col md:flex-row items-start justify-center min-h-[500px] gap-8">
           <motion.div
@@ -102,7 +102,7 @@ export default function DemandPage() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 150 }}
                 transition={{ duration: 0.6, type: "spring" }}
-                action="https://formspree.io/f/demo"
+                  action="https://formspree.io/f/mblyqvvv"
                 method="POST"
                 className="bg-white/90 border border-gray-200 rounded-xl p-8 flex flex-col gap-5 shadow-xl backdrop-blur w-full md:w-1/2"
                 onSubmit={e => {

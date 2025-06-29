@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import NotificationBell from "./NotificationBell";
 
@@ -13,14 +14,12 @@ export default function Header() {
             Just <span className="text-blue-600">LPUThinks</span>
           </span>
         </Link>
-
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/resources" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Resources</Link>
           <Link href="/videos" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Videos</Link>
           <Link href="/join" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">Join Us</Link>
           <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</Link>
         </nav>
-
         <div className="flex items-center space-x-2">
           <NotificationBell />
         </div>

@@ -2,7 +2,6 @@
 
 import { motion } from '@/lib/motion';
 import { FaYoutube, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -61,14 +60,9 @@ export default function AboutPage() {
           className="text-center"
         >
           <p className="text-gray-500 text-xs mb-2">
-            Want to connect or collaborate? Follow Bhavishya on social media, join the WhatsApp group, or reach out directly.
-          </p>
-          <Link
-            href="/join"
-            className="text-blue-600 underline text-sm font-medium hover:text-blue-800 transition"
-          >
-            Reach out by Join Us page
-          </Link>
+  Want to connect or collaborate? Follow Bhavishya on social media, join the WhatsApp group, or <a href="/join" className="text-blue-600 ">reach out by Join Us page</a>.
+</p>
+
         </motion.div>
       </motion.section>
     </main>

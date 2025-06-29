@@ -106,7 +106,7 @@ export default function Footer() {
         <div className="hidden md:block">
           <span className="text-gray-300 mx-2">|</span>
           <span>
-            {["Resources", "Videos", "Join Us", "About"].map((txt, i) => (
+            {["Resources", "Videos", "Join Us", "About"].map((txt) => (
               <a
                 key={txt}
                 href={`/${txt.toLowerCase().replace(/\s/g, "")}`}

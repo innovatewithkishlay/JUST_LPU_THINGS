@@ -21,7 +21,7 @@ export default function DemandPage() {
   };
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-10">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-6">
       <motion.section
         initial={{ opacity: 0, y: 32 }}
         animate={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ export default function DemandPage() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 150 }}
                 transition={{ duration: 0.6, type: "spring" }}
-                  action="https://formspree.io/f/mblyqvvv"
+                action="https://formspree.io/f/mblyqvvv"
                 method="POST"
                 className="bg-white/90 border border-gray-200 rounded-xl p-8 flex flex-col gap-5 shadow-xl backdrop-blur w-full md:w-1/2"
                 onSubmit={e => {
@@ -151,23 +151,48 @@ export default function DemandPage() {
           {submitted && (
             <motion.div
               key="thanks"
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -16 }}
-              transition={{ duration: 0.4, type: "spring" }}
-              className="flex flex-col items-center w-full md:w-1/2 md:mx-auto mt-12"
+              initial={{ opacity: 0, y: 16, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -16, scale: 0.95 }}
+              transition={{ duration: 0.5, type: "spring" }}
+              className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-12"
             >
-              <div className="bg-blue-50 border border-blue-100 rounded-full px-6 py-4 mb-4 shadow-sm">
-                <span className="text-2xl">🎉</span>
-              </div>
-              <div className="text-xl font-bold text-gray-900 mb-2 text-center">
-                Thanks for your response!
-              </div>
-              <div className="text-gray-600 text-sm text-center max-w-xs mb-2">
-                We appreciate your feedback and will get back to you if needed. Your input helps us make Just LPUThinks better for everyone.
-              </div>
-              <div className="text-xs text-gray-400 text-center">
-                Want to contribute more? <a href="/join" className="text-blue-600 underline">Join our team</a> or connect on our WhatsApp group!
+              <div className="flex flex-col items-center bg-white/90 border border-blue-100 rounded-2xl px-8 py-10 shadow-xl">
+                <div className="mb-5">
+                  <span className="inline-flex items-center justify-center rounded-full bg-blue-100 shadow h-16 w-16">
+                    <svg className="h-10 w-10 text-blue-600 animate-bounce" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={2.5} fill="none" />
+                    </svg>
+                  </span>
+                </div>
+                <div className="text-2xl font-extrabold text-gray-900 mb-3 text-center">
+                  Thanks for your response!
+                </div>
+                <div className="text-gray-600 text-base text-center mb-6 max-w-md">
+                  We appreciate your feedback and will get back to you if needed.<br />
+                  Your input helps us make <span className="font-semibold text-blue-600">Just LPUThinks</span> better for everyone.
+                </div>
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <a
+                    href="/join"
+                    className="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm font-semibold shadow hover:bg-blue-700 transition"
+                  >
+                    Join our team
+                  </a>
+                  <a
+                    href="https://wa.me/911234567890"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-green-600 hover:text-green-800 text-sm font-semibold"
+                  >
+                    <svg className="h-5 w-5" viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.617.845 5.036 2.277 7.04L4 29l7.14-2.253C12.995 27.58 14.466 28 16 28c6.627 0 12-5.373 12-13S22.627 3 16 3zm0 23c-1.335 0-2.635-.22-3.855-.637l-.273-.09-4.225 1.334 1.382-4.02-.178-.278C7.187 19.092 6.5 17.09 6.5 15c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5zm5.25-7.25c-.287-.144-1.7-.84-1.962-.936-.262-.096-.453-.144-.645.144-.192.287-.74.936-.907 1.13-.168.192-.335.216-.622.072-.287-.144-1.213-.447-2.31-1.426-.854-.762-1.43-1.703-1.598-1.99-.168-.288-.018-.444.127-.588.13-.129.287-.335.43-.504.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.645-1.557-.885-2.134-.234-.562-.472-.486-.646-.495l-.549-.009c-.192 0-.504.072-.768.36-.264.288-1.008.984-1.008 2.4 0 1.416 1.032 2.784 1.176 2.976.144.192 2.032 3.104 5.07 4.23.71.244 1.263.389 1.695.497.712.181 1.36.156 1.872.095.571-.068 1.7-.693 1.94-1.363.24-.67.24-1.243.168-1.363-.072-.12-.262-.192-.549-.336z"/></svg>
+                    WhatsApp Group
+                  </a>
+                </div>
+                <div className="mt-4 text-xs text-gray-400 text-center">
+                  Want to contribute more? Join our team or connect on WhatsApp!
+                </div>
               </div>
             </motion.div>
           )}

@@ -17,6 +17,7 @@ export default function Header() {
           <Link href="/videos" className="text-sm text-gray-700 tracking-wide hover:text-blue-600 transition-colors">Videos</Link>
           <Link href="/join" className="text-sm text-gray-700 tracking-wide hover:text-blue-600 transition-colors">Join Us</Link>
           <Link href="/about" className="text-sm text-gray-700 tracking-wide hover:text-blue-600 transition-colors">About</Link>
+          <Link href="/demand" className="text-sm text-blue-600 font-semibold underline underline-offset-2 hover:text-blue-800 transition-colors">Your Demand</Link>
         </nav>
         <div className="flex items-center">
           <NotificationBell />

@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: just-lpu-things
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    nodeVersion: 20

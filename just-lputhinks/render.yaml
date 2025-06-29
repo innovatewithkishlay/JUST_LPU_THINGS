@@ -5,3 +5,6 @@ services:
     buildCommand: npm install && npm run build
     startCommand: npm run start
     nodeVersion: 20
+    buildFilter:
+      paths:
+        - "!bun.lockb"

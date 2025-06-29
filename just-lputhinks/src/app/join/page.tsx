@@ -16,10 +16,10 @@ export default function JoinUsPage() {
           Get Paid to Teach, Share & Help
         </h1>
         <p className="text-blue-700 text-base font-semibold text-center mb-2">
-          Yes, you can earn real rewards by joining Just LPUThinks!
+          Yes, you can earn real rewards by joining Just LPUThings!
         </p>
         <p className="text-gray-700 text-sm text-center mb-8 max-w-xl mx-auto">
-          Are you great at coding, maths, science, or any subject where students struggle? Do you have notes, MCQs, or the ability to explain concepts in a simple way? Become a paid contributor, teacher, or campus ambassador at Just LPUThinks. Share your knowledge, help others, and get rewarded for your effort—no matter your year or branch.
+          Are you great at coding, maths, science, or any subject where students struggle? Do you have notes, MCQs, or the ability to explain concepts in a simple way? Become a paid contributor, teacher, or campus ambassador at Just LPUThings. Share your knowledge, help others, and get rewarded for your effort—no matter your year or branch.
         </p>
         <ul className="mb-10 bg-white/90 border border-gray-100 rounded-xl p-5 shadow flex flex-col gap-3 w-full max-w-2xl mx-auto">
           <li className="flex items-start gap-3">
@@ -40,7 +40,7 @@ export default function JoinUsPage() {
             <span className="inline-block h-2.5 w-2.5 mt-1 rounded-full bg-blue-400"></span>
             <div>
               <span className="font-medium text-gray-900">Campus Ambassador Rewards:</span>
-              <span className="text-gray-600 ml-1">Promote Just LPUThinks to your network and earn exclusive rewards and recognition.</span>
+              <span className="text-gray-600 ml-1">Promote Just LPUThings to your network and earn exclusive rewards and recognition.</span>
             </div>
           </li>
           <li className="flex items-start gap-3">
@@ -54,14 +54,14 @@ export default function JoinUsPage() {
         <div className="w-full max-w-2xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 mt-8">
           <div className="flex flex-col items-center gap-3">
             <FaEnvelope className="text-blue-600 w-6 h-6" />
-            <a href="mailto:contact@justlputhinks.com" className="text-blue-600 hover:underline text-sm">
-              contact@justlputhinks.com
+            <a href="mailto:contact@justJust LPUThings.com" className="text-blue-600 hover:underline text-sm">
+              contact@justJust LPUThings.com
             </a>
           </div>
           <div className="flex flex-col items-center gap-3">
             <FaInstagram className="text-pink-500 w-6 h-6" />
             <a href="https://instagram.com/demo" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:underline text-sm">
-              @justlputhinks
+              @justJust LPUThings
             </a>
           </div>
           <div className="flex flex-col items-center gap-3">

@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-lg font-extrabold tracking-tight text-gray-900">
-            Just <span className="text-blue-600">LPUThinks</span>
+            Just <span className="text-blue-600">LPUThings</span>
           </span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6">

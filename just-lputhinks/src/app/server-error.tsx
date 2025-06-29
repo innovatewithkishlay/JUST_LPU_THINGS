@@ -34,7 +34,7 @@ export default function ServerError() {
             Go to Homepage
           </Link>
           <a
-            href="mailto:support@justlputhinks.com"
+            href="mailto:support@justJust LPUThings.com"
             className="bg-gray-100 text-gray-700 px-6 py-2 rounded-lg font-medium shadow hover:bg-gray-200 transition text-center"
           >
             Contact Support

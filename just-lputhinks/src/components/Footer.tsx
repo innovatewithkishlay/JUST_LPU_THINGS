@@ -30,7 +30,7 @@ export default function Footer() {
     <footer className="w-full border-t border-gray-200 bg-white py-6 relative font-light">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between px-4 gap-2 text-xs text-gray-500">
         <div>
-          © {new Date().getFullYear()} Just LPUThinks
+          © {new Date().getFullYear()} Just LPUThings
         </div>
         <div className="relative flex items-center">
           <span>Know the developer </span>

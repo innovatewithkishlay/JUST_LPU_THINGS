@@ -102,7 +102,7 @@ function FounderNote() {
     >
       <div className="border border-gray-100 bg-gray-50 rounded-xl px-6 py-5 text-center shadow-sm">
         <div className="text-base font-semibold text-gray-800 mb-1">
-          “Learning together, growing together — Just LPUThinks, where every student shines and smiles!”
+          “Learning together, growing together — Just LPUThings, where every student shines and smiles!”
         </div>
         <div className="text-xs text-gray-500 mt-2">
           — Bhavishya Kumar, Founder
@@ -124,7 +124,7 @@ export default function Home() {
           className="w-full max-w-2xl text-center mb-10"
         >
           <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-2">
-            Just <span className="text-blue-600">LPUThinks</span>
+            Just <span className="text-blue-600">LPUThings</span>
           </h1>
           <div className="text-gray-600 text-base mb-1">
             <span className="font-semibold text-blue-700">The next-gen resource hub for LPU students.</span>

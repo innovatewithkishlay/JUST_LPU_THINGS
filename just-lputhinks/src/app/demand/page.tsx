@@ -52,7 +52,7 @@ export default function DemandPage() {
                 Tell Us What You Want
               </h1>
               <p className="text-gray-600 text-sm mb-8 text-center md:text-left">
-                We want to make Just LPUThinks the best resource hub for you.
+                We want to make Just LPUThings the best resource hub for you.
                 <br />
                 <span className="text-blue-700 font-semibold">
                   Your ideas, doubts, and requests directly shape our next
@@ -225,7 +225,7 @@ export default function DemandPage() {
                   <br />
                   Your input helps us make{" "}
                   <span className="font-semibold text-blue-600">
-                    Just LPUThinks
+                    Just LPUThings
                   </span>{" "}
                   better for everyone.
                 </div>

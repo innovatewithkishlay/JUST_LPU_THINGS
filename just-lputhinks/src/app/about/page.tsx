@@ -13,7 +13,7 @@ export default function AboutPage() {
         className="w-full max-w-3xl"
       >
         <h1 className="text-3xl font-extrabold text-gray-900 mb-6 tracking-tight text-center">
-          What is Just LPUThinks?
+          What is Just LPUThings?
         </h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,10 +22,10 @@ export default function AboutPage() {
           className="mb-8"
         >
           <p className="text-gray-700 text-sm leading-relaxed mb-4 text-center">
-            Just LPUThinks is a modern educational resource hub for Lovely Professional University students. Our mission is to provide clean, organized, and easily accessible semester-wise study materials—notes, PPTs, MCQs, PDFs, and video lectures—to help students build a solid foundation in their first two years.
+            Just LPUThings is a modern educational resource hub for Lovely Professional University students. Our mission is to provide clean, organized, and easily accessible semester-wise study materials—notes, PPTs, MCQs, PDFs, and video lectures—to help students build a solid foundation in their first two years.
           </p>
           <p className="text-gray-700 text-sm leading-relaxed mb-4 text-center">
-            We believe in collaboration and community-driven learning. Students and teachers can contribute resources and become part of the Just LPUThinks team, earning while helping others.
+            We believe in collaboration and community-driven learning. Students and teachers can contribute resources and become part of the Just LPUThings team, earning while helping others.
           </p>
         </motion.div>
         <motion.div
@@ -36,7 +36,7 @@ export default function AboutPage() {
         >
           <div className="text-base font-semibold text-gray-900 mb-1">Meet the Founder</div>
           <div className="text-gray-700 text-sm mb-2 text-center">
-            <span className="font-medium">Bhavishya Kumar</span> is the founder and owner of Just LPUThinks. He is a third-year BTech CSE student at Lovely Professional University, passionate about building modern, clean, and user-friendly educational platforms to empower students and foster collaborative learning.
+            <span className="font-medium">Bhavishya Kumar</span> is the founder and owner of Just LPUThings. He is a third-year BTech CSE student at Lovely Professional University, passionate about building modern, clean, and user-friendly educational platforms to empower students and foster collaborative learning.
           </div>
           <div className="flex justify-center space-x-6 mt-2">
             <a href="https://youtube.com/demo" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 transition text-2xl">

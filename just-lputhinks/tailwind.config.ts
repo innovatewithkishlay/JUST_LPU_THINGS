@@ -11,6 +11,10 @@ const config = {
     extend: {},
   },
   plugins: [forms],
+  fontFamily: {
+  sans: ['Inter', 'sans-serif'],
+},
+
 };
 
 export default config;

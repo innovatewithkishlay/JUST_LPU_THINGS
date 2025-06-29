@@ -7,8 +7,21 @@ export default function DemandPage() {
   const [showForm, setShowForm] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const isFormValid = formData.name.trim() !== '' && formData.email.trim() !== '' && formData.message.trim() !== '';
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-16">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center px-4 py-6">
       <motion.section
         initial={{ opacity: 0, y: 32 }}
         animate={{ opacity: 1, y: 0 }}
@@ -66,14 +79,14 @@ export default function DemandPage() {
                 <span className="inline-block h-2.5 w-2.5 mt-1 rounded-full bg-blue-400"></span>
                 <div>
                   <span className="font-medium text-gray-900">Ask Doubts or Questions:</span>
-                  <span className="text-gray-600 ml-1">Submit your academic or technical doubts—our team and community will help.</span>
+                  <span className="text-gray-600 ml-1">Submit your academic or technical doubts - our team and community will help.</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <span className="inline-block h-2.5 w-2.5 mt-1 rounded-full bg-blue-400"></span>
                 <div>
                   <span className="font-medium text-gray-900">Feedback & Improvements:</span>
-                  <span className="text-gray-600 ml-1">Help us improve the platform’s design, speed, or accessibility.</span>
+                  <span className="text-gray-600 ml-1">Help us improve the platform&apos;s design, speed, or accessibility.</span>
                 </div>
               </li>
             </motion.ul>
@@ -154,6 +167,8 @@ export default function DemandPage() {
                     required
                     placeholder="Your Name"
                     className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                   <input
                     type="email"
@@ -161,6 +176,8 @@ export default function DemandPage() {
                     required
                     placeholder="Your Email"
                     className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 transition"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                   <textarea
                     name="message"
@@ -168,10 +185,13 @@ export default function DemandPage() {
                     placeholder="What do you want? (Feature, Resource, Doubt, etc.)"
                     rows={4}
                     className="w-full rounded-lg border border-gray-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100 transition resize-none"
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                   <button
                     type="submit"
-                    className="w-full bg-blue-600 text-white rounded-lg py-2 text-sm font-semibold shadow-md hover:bg-blue-700 transition"
+                    disabled={!isFormValid}
+                    className={`w-full rounded-lg py-2 text-sm font-semibold shadow-md transition ${isFormValid ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
                   >
                     Submit
                   </button>

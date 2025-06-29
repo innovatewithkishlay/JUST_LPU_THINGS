@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from '@/lib/motion';
+import Link from "next/link";
 
 export default function NotificationBell() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,7 @@ export default function NotificationBell() {
             className="absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-10 overflow-hidden"
           >
             <div className="p-4 border-b border-gray-100">
-              <h3 className="font-semibold text-gray-900">Notifications</h3>
+              <h3 className="font-semibold text-gray-900 text-sm">Notifications</h3>
             </div>
             
             <div className="max-h-80 overflow-y-auto">
@@ -80,32 +81,32 @@ export default function NotificationBell() {
                     }`}
                   >
                     <div className="flex justify-between">
-                      <h4 className="font-medium text-gray-900">{notification.title}</h4>
+                      <h4 className="font-medium text-gray-900 text-sm">{notification.title}</h4>
                       <span className="text-xs text-gray-500">{notification.timestamp}</span>
                     </div>
-                    <p className="mt-1 text-sm text-gray-600">{notification.message}</p>
-                    <a 
+                    <p className="mt-1 text-xs text-gray-600">{notification.message}</p>
+                    <Link 
                       href={notification.link} 
-                      className="mt-2 inline-block text-sm text-blue-600 hover:underline"
+                      className="mt-2 inline-block text-xs text-blue-600 hover:underline"
                     >
                       View details
-                    </a>
+                    </Link>
                   </motion.div>
                 ))
               ) : (
                 <div className="p-6 text-center">
-                  <p className="text-gray-500">No notifications</p>
+                  <p className="text-gray-500 text-sm">No notifications</p>
                 </div>
               )}
             </div>
             
             <div className="p-3 bg-gray-50 text-center">
-              <a 
+              <Link 
                 href="/notifications" 
-                className="text-sm text-blue-600 hover:underline"
+                className="text-xs text-blue-600 hover:underline"
               >
                 View all notifications
-              </a>
+              </Link>
             </div>
           </motion.div>
         )}

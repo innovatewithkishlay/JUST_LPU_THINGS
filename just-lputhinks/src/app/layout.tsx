@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className + " bg-white text-gray-900 antialiased"}>
         <Header />
-        {children}
+        <div className="min-h-screen">{children}</div>
       </body>
     </html>
   );

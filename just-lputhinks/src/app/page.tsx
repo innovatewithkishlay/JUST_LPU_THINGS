@@ -21,7 +21,7 @@ function FeatureCard({ icon, title, desc, delay }: { icon: React.ReactNode, titl
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white flex flex-col items-center justify-center px-6 py-16">
+    <main className="w-full flex flex-col items-center justify-center px-6 py-16 bg-gradient-to-b from-blue-50 via-white to-white">
       <motion.section
         initial={{ opacity: 0, y: 32 }}
         animate={{ opacity: 1, y: 0 }}
